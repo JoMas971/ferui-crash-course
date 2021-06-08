@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+// We load all the FerUI styles for every components.
+@import "node_modules/@ferui/design/scss/ferui-design";
+
+.main-wrapper {
+  padding: map-get($spacers, 2);
+  margin-top: map-get($spacers, 3);
+}

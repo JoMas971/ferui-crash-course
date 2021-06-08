@@ -1,0 +1,14 @@
+<main class="main-wrapper">
+  <fui-widget>
+    <fui-widget-header>
+      <fui-widget-title>Datagrid example</fui-widget-title>
+    </fui-widget-header>
+    <fui-widget-body class="p-3">
+      This widget is using the <code>FuiWidgetModule</code> as well as <code>FuiDatagridModule</code> to render this block.<br /><br />
+      <fui-datagrid
+        [defaultColDefs]="defaultColumnDefsSynchronous"
+        [columnDefs]="columnDefsSynchronous"
+        [rowData]="synchronousRowData"></fui-datagrid>
+    </fui-widget-body>
+  </fui-widget>
+</main>

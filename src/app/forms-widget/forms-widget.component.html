@@ -1,0 +1,35 @@
+<main class="main-wrapper">
+  <fui-widget>
+    <fui-widget-header>
+      <fui-widget-title>Form elements example</fui-widget-title>
+    </fui-widget-header>
+    <fui-widget-body class="p-3">
+      This widget is using the <code>FuiWidgetModule</code> as well as <code>FuiCommonFormsModule</code>, <code>FuiSelectModule</code>, <code>FuiInputModule</code>, <code>FuiNumberModule</code>to render this block.<br /><br />
+
+      <form fuiForm>
+        <fui-input-container>
+          <label fuiLabel>Input text example</label>
+          <input name="input-text" fuiInput [(ngModel)]="inputModel" />
+        </fui-input-container>
+
+        <fui-number-container>
+          <label fuiLabel>Input number example</label>
+          <input name="input-number" fuiNumber [(ngModel)]="numberModel" />
+        </fui-number-container>
+
+        <fui-select-container>
+          <label fuiLabel>Select example</label>
+          <fui-select
+            fuiSelect
+            name="country"
+            [items]="countries"
+            bindLabel="nested.name"
+            bindValue="nested.countryId"
+            [(ngModel)]="selectModel"
+            required>
+          </fui-select>
+        </fui-select-container>
+      </form>
+    </fui-widget-body>
+  </fui-widget>
+</main>

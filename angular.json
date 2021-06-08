@@ -25,12 +25,20 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.*",
+                "input": "node_modules/@ferui/design/font-files",
+                "output": "/font-files"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "node_modules/@ferui/icons/fui-icons.css"
+              }
             ],
-            "scripts": []
+            "scripts": ["node_modules/@webcomponents/custom-elements/custom-elements.min.js"]
           },
           "configurations": {
             "production": {
